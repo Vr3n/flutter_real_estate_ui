@@ -1,5 +1,6 @@
 import 'dart:ui';
 import 'package:flutter/material.dart';
+import 'package:real_estate_ui/screens/landing_screen.dart';
 import 'package:real_estate_ui/utils/constants.dart';
 
 void main() {
@@ -20,7 +21,8 @@ class MyApp extends StatelessWidget {
         textTheme: screenWidth < 500 ? TEXT_THEME_SMALL : TEXT_THEME_DEFAULT,
         fontFamily: 'Montserrat',
       ),
-      home: const Text("Home Page"),
+      home: LandingScreen(),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
